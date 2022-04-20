@@ -24,7 +24,7 @@ const Slider = () => {
                 <input type='range' value={rangeVal} onChange={onchangeRangeVal}></input>
                 <div className='quickValueWrap'>
                     {quickValue.map((el, idx) => (
-                        <div className={`quickValueBtn`}>
+                        <div key={el} className={`quickValueBtn`}>
                             <p onClick={onclickQuickValue} id={el} >{el}%</p>
                         </div>
                     ))}
