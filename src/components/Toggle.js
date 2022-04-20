@@ -5,7 +5,7 @@ const Toggle = () => {
 
     const [toggleState, setToggleState] = useState(true)
     const onClickToggle = (e) =>{
-        if(toggleState == e.target.id) return
+        if(toggleState === e.target.id) return
 
         setToggleState(!toggleState)
     }

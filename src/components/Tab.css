@@ -25,6 +25,7 @@
     flex: 1;
     justify-content: center;
     color: #aaa;
+    font-size: 1.1vw
 }
 .tapWrap .active {color: #333;}
 
