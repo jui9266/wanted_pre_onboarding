@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import './Toggle.css'
 
 const Toggle = () => {
 
     const [toggleState, setToggleState] = useState(true)
-    const onClickToggle = (e) =>{
+    const onClickToggle = useCallback((e) =>{
         if(toggleState === e.target.id) return
 
         setToggleState(!toggleState)
-    }
+    },[toggleState])
 
     return (
         <div className='toggle'>

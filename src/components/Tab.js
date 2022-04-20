@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import './Tab.css'
 
 const Tab = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    const onclickTab = (e) => {
+    const onclickTab = useCallback((e) => {
         setActiveIndex(Number(e.target.id))
-    }
+    },[])
 
     return (
         <div className='tap'>

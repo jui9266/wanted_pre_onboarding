@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import './Slider.css'
 
 
@@ -6,13 +6,13 @@ const Slider = () => {
     const [rangeVal, setRangeVal] = useState(30)
     const quickValue = [0, 25, 50, 75, 100]
 
-    const onchangeRangeVal = (e) => {
+    const onchangeRangeVal = useCallback((e) => {
         setRangeVal(e.target.value)
-    }
+    },[])
 
-    const onclickQuickValue = (e) =>{
+    const onclickQuickValue = useCallback((e) =>{
         setRangeVal(e.target.id)
-    }
+    },[])
 
     return (
         <div className='slider'>

@@ -1,3 +1,7 @@
+h2 {
+    margin-top: 20px;
+}
+
 .input {
     display: inline-block;
     width: 50%;
@@ -12,8 +16,9 @@
 
 }
 
+
 .input .inputBox {
-    margin-top: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     background-color: #fff;
     width: 100%;
@@ -22,12 +27,19 @@
     padding-left: 10px;
 }
 
+.input .alert {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+}
+
 .input .icon {
     position: absolute;
-    top: 18px;
+    top: 13px;
     right: 10px;
     color: #aaa;
 }
-.input .icon.right{
+
+.input .icon.right {
     color: green !important;
 }

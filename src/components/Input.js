@@ -13,9 +13,10 @@ const Input = () => {
   const [passwordMode, setPasswordMode] = useState(true)
 
   const onChangeEmail = useCallback((e) => {
+    const v = e.target.value
+    setemailValue(v)
     const regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
-    regEmail.test(emailValue) === true ? setEmailCheck(true) : setEmailCheck(false)
-    setemailValue(e.target.value)
+    regEmail.test(v) === true ? setEmailCheck(true) : setEmailCheck(false)
   }, [emailValue])
 
   const onChangePassword = useCallback((e) => {
@@ -36,6 +37,7 @@ const Input = () => {
         <div className='inputBoxWrap'>
           <input className='inputBox' type='email' value={emailValue} onChange={onChangeEmail} placeholder="E-mail" />
           <FontAwesomeIcon className={emailCheck ? 'icon right' : 'icon'} icon={faCircleCheck} />
+          {emailValue.length >0 && !emailCheck && <p className='alert'>이메일 형식을 확인해주세요.</p>}
         </div>
       </div>
 
