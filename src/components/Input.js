@@ -20,7 +20,7 @@ const Input = () => {
 
   const onChangePassword = useCallback((e) => {
     setPasswordValue(e.target.value)
-  }, [emailValue])
+  }, [passwordValue])
 
   const togglePasswordMode = useCallback((e)=>{
     setPasswordMode(!passwordMode)
