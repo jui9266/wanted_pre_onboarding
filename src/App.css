@@ -1,0 +1,43 @@
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 1em;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: inherit;
+  text-decoration: inherit;
+  border: 0 solid transparent;
+  outline: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+#whole {
+  overflow: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.App {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}

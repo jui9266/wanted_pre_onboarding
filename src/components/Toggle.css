@@ -1,0 +1,54 @@
+.toggle {
+    display: inline-block;
+    padding-top: 60px;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #aaa;
+    vertical-align: middle;
+}
+
+.toggle .toggleWrap {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    margin: 0 auto;
+    
+}
+
+.toggle .toggleWrap ul {
+    position: relative;
+}
+
+.toggle li {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.active {
+    color: #333 !important;
+}
+
+.toggle .toggleWrap .toggleActive {
+    position: absolute;
+    width: 50%;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 0%;
+    transition: left 200ms linear
+}
+
+.toggleActive.l0 {
+    left: 0;
+}
+
+.toggleActive.l50 {
+    left: 50%;
+}

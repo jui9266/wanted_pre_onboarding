@@ -1,0 +1,43 @@
+.tap {
+    display: inline-block;
+    padding-top: 60px;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #aaa;
+    vertical-align: middle;
+}
+
+.tapWrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tapWrap ul {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.tapWrap ul li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: #aaa;
+}
+.tapWrap .active {color: #333;}
+
+
+.tapWrap .line {
+    position: absolute;
+    margin-top: -1px;
+    width: 33%;
+    height: 2px;
+    background-color: blue;
+    transition: left 200ms linear
+}
+
+.tapWrap .line.active0 {left: 0;}
+.tapWrap .line.active1 {left: 33%;}
+.tapWrap .line.active2 {left: 67%;}
