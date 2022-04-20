@@ -16,7 +16,7 @@ Range값의 변화를 onChange로 감지하여 usestate에 적용
 usestate로 passowrd모드 상태변경 true일떄 input type='password' false일떄 input type='text'
 
 ## Dropdown 
-감색어가 없을경우 데이터로가지고 있는 모든값을보여줌  
+검색어가 없을경우 데이터로가지고 있는 모든값을보여줌  
 검색어가 있을경우에는 정규표현식으로 기존데이터에서 필터한 부분을 나타냄  
 select박스에서 선택을 할경우 selectVal를 변경하여 선택후 및 Dropbox 초기상태로 변경
 
