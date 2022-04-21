@@ -8,11 +8,11 @@ const Slider = () => {
 
     const onchangeRangeVal = useCallback((e) => {
         setRangeVal(e.target.value)
-    },[])
+    }, [])
 
-    const onclickQuickValue = useCallback((e) =>{
+    const onclickQuickValue = useCallback((e) => {
         setRangeVal(e.target.id)
-    },[])
+    }, [])
 
     return (
         <div className='slider'>
@@ -24,7 +24,7 @@ const Slider = () => {
                 <input type='range' value={rangeVal} onChange={onchangeRangeVal}></input>
                 <div className='quickValueWrap'>
                     {quickValue.map((el, idx) => (
-                        <div key={el} className={`quickValueBtn`}>
+                        <div key={el} className='quickValueBtn'>
                             <p onClick={onclickQuickValue} id={el} >{el}%</p>
                         </div>
                     ))}

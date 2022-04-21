@@ -6,7 +6,6 @@ const Toggle = () => {
     const [toggleState, setToggleState] = useState(true)
     const onClickToggle = useCallback((e) =>{
         if(toggleState === e.target.id) return
-
         setToggleState(!toggleState)
     },[toggleState])
 

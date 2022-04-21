@@ -19,18 +19,18 @@ const Dropdown = () => {
         const value = e.target.value
         setSearchVal(value)
         filterD(value)
-    },[])
+    }, [])
 
     const filterD = useCallback((value) => {
         const copyData = data.filter(el => el.match(new RegExp(value, "i")))
         setfilterData(copyData)
-    },[])
+    }, [])
 
-    const onclickSelectBox =useCallback((e)=>{
+    const onclickSelectBox = useCallback((e) => {
         setSelectVal(e.target.dataset.value)
         setSearchVal('')
         setOtionBox(false)
-    },[])
+    }, [])
 
     return (
         <div className='dropdown'>
